@@ -20,7 +20,6 @@ jobs:
       with:
         python-version: '3.x'
         architecture: 'x64'
-    - run: pip install --upgrade setuptools==57.5.0
     - run: pip install -r ./requirements.txt && python ./main.py
 
     env:
