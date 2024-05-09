@@ -56,11 +56,13 @@ wm = WeChatMessage(client)
 wea = "晴"
 temperature = "520"
 data = {"weather":{"value":wea},"temperature":{"value":temperature},"love_days":{"value":get_count()},"birthday_left":{"value":get_birthday()},"words":{"value":get_words(), "color":get_random_color()}}
-print("data: " + data)
-print("user_id: " + user_id)
-print("template_id: " + template_id)
-print("user_id_2: " + user_id_2)
-print("template_id_2: " + template_id_2)
+print("\n============================================\n============================================\n")
+print("data: ",data)
+print("user_id: ",user_id)
+print("template_id: ",template_id)
+print("user_id_2: ",user_id_2)
+print("template_id_2: ",template_id_2)
+print("\n============================================\n============================================\n")
 res1 = wm.send_template(user_id, template_id, data)
 print(res1)
 res2 = wm.send_template(user_id_2, template_id_2, data)
